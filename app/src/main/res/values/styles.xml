@@ -1,0 +1,269 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <item name="android:windowBackground">@color/white</item>
+
+    </style>
+
+    <style name="AppSplash" parent="welcomeTheme">
+        <item name="android:windowBackground">@drawable/splash</item>
+    </style>
+    <style name="welcomeTheme" parent="AppTheme">
+        <item name="android:windowNoTitle">true</item>//无标题
+        <item name="android:windowActionBar">false</item>//无ActionBar
+        <item name="android:windowFullscreen">true</item>//全屏即无通知栏
+        <item name="android:windowContentOverlay">@null</item>//是否有遮盖
+    </style>
+
+    <style name="MyDialogStyleLoading">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+    <style name="MyDialogStyle1">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <style name="tv_base_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/text_size_15sp</item>
+        <item name="android:textColor">@color/color_001833</item>
+    </style>
+
+    <style name="tv_style_15_001833" parent="tv_base_style">
+        <item name="android:textSize">@dimen/text_size_15sp</item>
+        <item name="android:textColor">@color/color_001833</item>
+    </style>
+
+    <style name="tv_style_12_001833" parent="tv_base_style">
+        <item name="android:textSize">@dimen/text_size_12sp</item>
+        <item name="android:textColor">@color/color_001833</item>
+    </style>
+
+    <style name="tv_style_12_999" parent="tv_base_style">
+        <item name="android:textSize">@dimen/text_size_12sp</item>
+        <item name="android:textColor">@color/color_999999</item>
+    </style>
+
+    <style name="tv_style_15_999" parent="tv_base_style">
+        <item name="android:textSize">@dimen/text_size_15sp</item>
+        <item name="android:textColor">@color/color_999999</item>
+    </style>
+
+    <style name="tv_style_15_0073F8" parent="tv_base_style">
+        <item name="android:textSize">@dimen/text_size_15sp</item>
+        <item name="android:textColor">@color/color_0073F8</item>
+    </style>
+    <style name="tv_style_17_0073F8" parent="tv_base_style">
+        <item name="android:textSize">@dimen/text_size_17sp</item>
+        <item name="android:textColor">@color/color_0073F8</item>
+    </style>
+    <style name="tv_style_12_666" parent="tv_base_style">
+        <item name="android:textSize">@dimen/text_size_12sp</item>
+        <item name="android:textColor">@color/color_666666</item>
+    </style>
+
+    <style name="tv_style_14_666" parent="tv_base_style">
+        <item name="android:textSize">@dimen/text_size_14sp</item>
+        <item name="android:textColor">@color/color_666666</item>
+    </style>
+
+    <style name="tv_style_14_black" parent="tv_base_style">
+        <item name="android:textSize">@dimen/text_size_14sp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="tv_style_18_001833" parent="tv_base_style">
+        <item name="android:textSize">@dimen/text_size_18sp</item>
+        <item name="android:textColor">@color/color_001833</item>
+    </style>
+
+    <style name="tv_style_17_black" parent="tv_base_style">
+        <item name="android:textSize">@dimen/text_size_17sp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="tv_style_6" parent="tv_base_style">
+        <item name="android:textSize">@dimen/text_size_18sp</item>
+    </style>
+
+    <style name="tv_style_7" parent="tv_base_style">
+        <item name="android:textSize">@dimen/text_size_22sp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="tv_style_8" parent="tv_base_style">
+        <item name="android:textSize">@dimen/text_size_15sp</item>
+        <item name="android:textColor">@color/color_666666</item>
+    </style>
+
+    <style name="tv_style_15_333" parent="tv_base_style">
+        <item name="android:textSize">@dimen/text_size_15sp</item>
+        <item name="android:textColor">@color/color_333333</item>
+    </style>
+
+    <style name="tv_style_15_666" parent="tv_base_style">
+        <item name="android:textSize">@dimen/text_size_15sp</item>
+        <item name="android:textColor">@color/color_666666</item>
+    </style>
+
+    <style name="tv_style_12_333" parent="tv_base_style">
+        <item name="android:textSize">@dimen/text_size_12sp</item>
+        <item name="android:textColor">@color/color_333333</item>
+    </style>
+
+    <style name="tv_style_18_333" parent="tv_base_style">
+        <item name="android:textSize">@dimen/text_size_18sp</item>
+        <item name="android:textColor">@color/color_333333</item>
+    </style>
+
+    <style name="tv_style_15_black" parent="tv_base_style">
+        <item name="android:textSize">@dimen/text_size_15sp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="tv_style_15_ccc" parent="tv_base_style">
+        <item name="android:textSize">@dimen/text_size_15sp</item>
+        <item name="android:textColor">@color/color_CCCCCC</item>
+    </style>
+
+    <style name="tv_style_12_f45654" parent="tv_base_style">
+        <item name="android:textSize">@dimen/text_size_12sp</item>
+        <item name="android:textColor">@color/color_F45654</item>
+    </style>
+
+    <style name="tv_style_18_black" parent="tv_base_style">
+        <item name="android:textSize">@dimen/text_size_18sp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="tv_style_12_black" parent="tv_base_style">
+        <item name="android:textSize">@dimen/text_size_12sp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="tv_style_16_black" parent="tv_base_style">
+        <item name="android:textSize">@dimen/text_size_16sp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+    <style name="tv_style_18_582600" parent="tv_base_style">
+        <item name="android:textSize">@dimen/text_size_18sp</item>
+        <item name="android:textColor">@color/color_582600</item>
+    </style>
+    <style name="mine_tv_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/space_65dp</item>
+        <item name="android:textColor">@color/color_001833</item>
+        <item name="android:textSize">@dimen/text_size_15sp</item>
+        <item name="android:drawablePadding">@dimen/space_10dp</item>
+        <item name="android:paddingLeft">@dimen/space_30dp</item>
+        <item name="android:paddingRight">@dimen/space_30dp</item>
+        <item name="android:drawableRight">@drawable/right</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:background">@drawable/bg_press</item>
+
+    </style>
+
+    <style name="my_message_tv_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/color_999999</item>
+        <item name="android:textSize">@dimen/text_size_12sp</item>
+        <item name="android:drawablePadding">@dimen/space_10dp</item>
+        <item name="android:drawableRight">@drawable/right</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_marginLeft">@dimen/space_20dp</item>
+
+    </style>
+
+    <style name="et_style_1">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginRight">@dimen/space_10dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@null</item>
+        <item name="android:lines">1</item>
+        <item name="android:maxLength">9</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textColorHint">@color/color_CCCCCC</item>
+        <item name="android:textSize">@dimen/text_size_15sp</item>
+    </style>
+
+    <style name="btn_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/space_50dp</item>
+        <item name="android:background">@drawable/shape_bg_yellow</item>
+        <item name="android:layout_marginRight">@dimen/space_30dp</item>
+        <item name="android:layout_marginLeft">@dimen/space_30dp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/text_size_15sp</item>
+    </style>
+
+    <style name="btn_style_gray">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/space_50dp</item>
+        <item name="android:background">@drawable/shape_bg_gray</item>
+        <item name="android:layout_marginRight">@dimen/space_30dp</item>
+        <item name="android:layout_marginLeft">@dimen/space_30dp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/text_size_15sp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="my_message_ll_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/space_60dp</item>
+        <item name="android:paddingLeft">@dimen/space_30dp</item>
+        <item name="android:paddingRight">@dimen/space_30dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:background">@drawable/bg_press</item>
+    </style>
+
+    <style name="radio_button_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/bg_selected_linechart</item>
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/bg_text_selected</item>
+        <item name="android:textSize">@dimen/text_size_15sp</item>
+    </style>
+
+    <style name="ll_tab_style">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="tv_tab_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:drawableTop">@drawable/selector_page1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/bg_tab_text</item>
+    </style>
+
+</resources>

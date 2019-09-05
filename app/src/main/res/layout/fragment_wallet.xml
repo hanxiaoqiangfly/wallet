@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical">
+
+    <include layout="@layout/top_bar_main"/>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginLeft="@dimen/space_15dp"
+                android:layout_marginRight="@dimen/space_15dp"
+                android:layout_marginTop="@dimen/space_10dp"
+                android:background="@drawable/bg"
+                android:paddingLeft="@dimen/space_15dp"
+                android:paddingRight="@dimen/space_15dp">
+
+                <TextView
+                    android:id="@+id/tv"
+                    style="@style/tv_style_18_582600"
+                    android:layout_marginTop="@dimen/space_20dp"
+                    android:text="黄金钱包"/>
+
+                <TextView
+                    android:id="@+id/tv_bill"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@id/tv"
+                    android:layout_alignParentRight="true"
+                    android:drawableLeft="@drawable/jilu"
+                    android:drawablePadding="@dimen/space_5dp"
+                    android:drawableTint="@color/color_582600"
+                    android:gravity="center"
+                    android:text="@string/bill"
+                    android:textColor="@color/color_582600"
+                    android:textSize="@dimen/text_size_15sp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv"
+                    android:layout_marginTop="@dimen/space_25dp"
+                    android:gravity="bottom">
+
+                    <TextView
+                        style="@style/tv_style_18_582600"
+                        android:drawableLeft="@drawable/mg1"
+                        android:drawablePadding="@dimen/space_5dp"
+                        android:drawableTint="@color/color_582600"
+                        android:text="@string/mg"
+                        android:textColor="@color/color_582600"/>
+
+                    <com.aladinn.walletkotlin.widget.TextViewDINMedium
+                        android:id="@+id/tvdm_mg"
+                        style="@style/tv_base_style"
+                        android:layout_marginLeft="@dimen/space_5dp"
+                        android:text="0.00"
+                        android:textColor="@color/color_582600"
+                        android:textSize="@dimen/text_size_27sp"/>
+
+                    <!--<Space-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_weight="1"/>-->
+
+                    <!--<TextView-->
+                    <!--android:id="@+id/tv_cny"-->
+                    <!--style="@style/tv_style_15_black"-->
+                    <!--android:text="≈0.0"/>-->
+
+                    <!--<TextView-->
+                    <!--style="@style/tv_style_12_666"-->
+                    <!--android:layout_marginLeft="@dimen/space_5dp"-->
+                    <!--android:text="@string/yuan"/>-->
+                </LinearLayout>
+
+                <TextView
+                    style="@style/tv_style_18_582600"
+                    android:layout_above="@id/tv_wallet_address"
+                    android:text="黄金钱包地址"
+                    android:textSize="@dimen/text_size_12sp"/>
+
+                <TextView
+                    android:id="@+id/tv_wallet_address"
+                    style="@style/tv_style_18_582600"
+                    android:layout_width="match_parent"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="@dimen/space_20dp"
+                    android:layout_marginTop="@dimen/space_10dp"
+                    android:layout_toLeftOf="@id/iv_copy"
+                    android:textSize="@dimen/text_size_15sp"
+                    android:layout_gravity="center"
+                    app:autoSizeTextType="uniform"
+                    app:autoSizeMinTextSize="10sp"
+                    app:autoSizeMaxTextSize="15sp"
+                    app:autoSizeStepGranularity="1sp"
+                    android:maxLines="1"
+                    tools:text="0x34343423"/>
+
+                <ImageView
+                    android:id="@+id/iv_copy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="@dimen/space_22dp"
+                    android:src="@drawable/fuzhi"/>
+
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/space_25dp"
+                android:layout_marginLeft="@dimen/space_15dp"
+                android:layout_marginRight="@dimen/space_15dp"
+                android:layout_marginTop="@dimen/space_25dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    style="@style/tv_style_18_black"
+                    android:text="¥"/>
+
+                <TextView
+                    style="@style/tv_style_18_black"
+                    android:layout_marginLeft="@dimen/space_10dp"
+                    android:text="@string/cny"/>
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"/>
+
+                <com.aladinn.walletkotlin.widget.TextViewDINMedium
+                    android:id="@+id/tvdm_cny"
+                    style="@style/tv_style_18_black"
+                    android:includeFontPadding="false"
+                    android:text="0.00"
+                    android:textSize="@dimen/text_size_22sp"/>
+
+                <TextView
+                    style="@style/tv_style_15_666"
+                    android:layout_marginLeft="@dimen/space_5dp"
+                    android:text="@string/yuan"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/space_20dp">
+
+                <TextView
+                    android:id="@+id/btn_recharge"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/space_45dp"
+                    android:layout_marginLeft="@dimen/space_30dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape_bg_yellow"
+                    android:gravity="center"
+                    android:text="@string/recharge"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_15sp"/>
+
+                <LinearLayout
+                    android:id="@+id/ll_withdrawal"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/space_45dp"
+                    android:layout_marginLeft="@dimen/space_15dp"
+                    android:layout_marginRight="@dimen/space_30dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape_bg_ring"
+                    android:gravity="center">
+
+                    <com.aladinn.walletkotlin.widget.TextViewHorizontalGradient
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/withdrawal"
+                        android:textSize="@dimen/text_size_15sp"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <include layout="@layout/line_space_10"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/space_15dp"
+                android:layout_marginRight="@dimen/space_15dp"
+                android:layout_marginTop="@dimen/space_15dp">
+
+                <TextView
+                    android:id="@+id/tv_entrust"
+                    style="@style/tv_style_15_black"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_press"
+                    android:drawablePadding="@dimen/space_5dp"
+                    android:drawableTop="@drawable/weituo"
+                    android:gravity="center"
+                    android:text="@string/entrust"/>
+
+
+                <TextView
+                    android:id="@+id/tv_sell"
+                    style="@style/tv_style_15_black"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_press"
+                    android:drawablePadding="@dimen/space_5dp"
+                    android:drawableTop="@drawable/chushou"
+                    android:gravity="center"
+                    android:text="@string/sell"/>
+
+                <TextView
+                    android:id="@+id/tv_redeem"
+                    style="@style/tv_style_15_black"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_press"
+                    android:drawablePadding="@dimen/space_5dp"
+                    android:drawableTop="@drawable/shuhui"
+                    android:gravity="center"
+                    android:text="@string/redeem"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/space_10dp"
+                android:layout_marginLeft="@dimen/space_15dp"
+                android:layout_marginRight="@dimen/space_15dp"
+                android:layout_marginTop="@dimen/space_15dp">
+
+                <TextView
+                    android:id="@+id/tv_purchase"
+                    style="@style/tv_style_15_black"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_press"
+                    android:drawablePadding="@dimen/space_5dp"
+                    android:drawableTop="@drawable/goumai"
+                    android:gravity="center"
+                    android:text="@string/purchase"/>
+
+                <TextView
+                    android:id="@+id/tv_zhuanzhang"
+                    style="@style/tv_style_15_black"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_press"
+                    android:drawablePadding="@dimen/space_5dp"
+                    android:drawableTop="@drawable/zhuanzhang"
+                    android:gravity="center"
+                    android:text="@string/transfer_accounts"/>
+
+                <TextView
+                    android:id="@+id/tv_huangjinlian"
+                    style="@style/tv_style_15_black"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_press"
+                    android:drawablePadding="@dimen/space_5dp"
+                    android:drawableTop="@drawable/huangjinlian"
+                    android:gravity="center"
+                    android:text="@string/huangjinlian"/>
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>

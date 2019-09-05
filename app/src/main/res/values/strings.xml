@@ -1,0 +1,271 @@
+<resources>
+    <!--<string name="app_name">MG金掌柜</string>-->
+    <string name="language_cn">简体</string>
+    <string name="language_en">ENGLISH</string>
+    <string name="language_auto">自动</string>
+    <string name="language_traditional">繁體</string>
+    <string name="filter_vcode">0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ</string>
+    <!--测试-->
+<!--    <string name="large_account_address">0x430022b38fc3db86b8c77f938de9e5a5ed2cddf8</string>-->
+<!--    <string name="xxpl">https://ropsten.etherscan.io/token/0xfA0f27196840C28487E5A64B709AD151a9398F3d</string>-->
+    <!--正式-->
+    <string name="large_account_address">0x651c612f344c841a643f61913722c93684242153</string>
+    <string name="xxpl">https://etherscan.io/tokentxns?a=0x05091ac2F6c0aB649181cD93e5f4B511eB3A51e1</string>
+
+    <string name="mg">MG</string>
+    <string name="cny">CNY</string>
+    <string name="gold_shopkeeper">MG金掌柜</string>
+    <string name="shouye">首页</string>
+    <string name="wallet">钱包</string>
+    <string name="market">市场</string>
+    <string name="mine">我的</string>
+    <string name="login_text_hint_username">请输入手机号</string>
+    <string name="login_text_hint_password">请输入密码</string>
+    <string name="login_text_hint_password1">请确认密码</string>
+    <string name="sms_verification_code">短信验证码</string>
+    <string name="invitation_code">邀请码(没有可不填)</string>
+    <string name="login_text_login">登录</string>
+    <string name="login_text_tip">没有账号？立即</string>
+    <string name="register">注册</string>
+    <string name="agreementCenterText">我已阅读并同意</string>
+    <string name="agreementTextLeft">我已阅读</string>
+    <string name="agreementText">《用户隐私协议》</string>
+    <string name="agreement_wallet_address_right">并知悉其风险</string>
+    <string name="agreementTextEntrustRight">并知悉协议内容,申请一键受托</string>
+    <string name="agreementTextRight">并知悉协议内容</string>
+
+    <string name="agreementText2">《注册协议》</string>
+    <string name="agreementText3">《资产买卖协议》</string>
+    <string name="agreementText4">《委托购买及受托管理协议》</string>
+    <string name="agreementText5">《赎回协议》</string>
+    <string name="agreementText6">《公链钱包转账协议》</string>
+    <string name="agreementText7">《充值提现协议》</string>
+    <string name="agreementText8">《钱包转账协议》</string>
+    <string name="yuan">元</string>
+    <string name="one_click_purchase">一键购买</string>
+    <string name="please_enter_the_purchase_quantity">请输入购买数量</string>
+    <string name="please_enter_the_turn_in_quantity">请输入转入数量</string>
+    <string name="platform_pay_pwd">请输入平台支付密码</string>
+    <string name="please_enter_the_sell_quantity">输入出售数量</string>
+    <string name="please_enter_the_out_quantity">输入转出数量</string>
+    <string name="please_enter_the_purchase_amount">请输入购买金额</string>
+    <string name="lookup">按订单号或用户昵称查找</string>
+    <string name="available_balance">可用余额</string>
+    <string name="search">搜索</string>
+    <string name="order_time">订单时间</string>
+    <string name="order_number">订单号&#8195;</string>
+    <string name="order_number1">订单号</string>
+    <string name="residual_quantity">剩余数量</string>
+    <string name="order_quantity">订单数量</string>
+    <string name="purchase">购买</string>
+    <string name="purchase_detail">购买详情</string>
+    <string name="sell">出售</string>
+    <string name="sell_mg">出售MG</string>
+    <string name="buy_mg">购买MG</string>
+    <string name="selling">出售中</string>
+    <string name="selled">已售完</string>
+    <string name="selled_cancle">已撤单</string>
+    <string name="redeem">赎回</string>
+    <string name="fenrun">分润</string>
+    <string name="redeem_gold">赎回黄金</string>
+    <string name="redeem_quantity">赎回数量</string>
+    <string name="entrust">委托</string>
+    <string name="entrust_title">购买黄金</string>
+    <string name="turn_out">转出</string>
+    <string name="turn_in">转入</string>
+    <string name="login_register">登录/注册</string>
+    <string name="login_out">退出登录</string>
+    <string name="is_login_out">确定退出当前账户吗？</string>
+    <string name="cancle">取消</string>
+    <string name="sure">确定</string>
+    <string name="maxcard">二维码名片</string>
+    <string name="my_team">我的战队</string>
+    <string name="gold_supermarket">黄金超市</string>
+    <string name="my_info">我的信息</string>
+    <string name="information_disclosure">信息披露</string>
+    <string name="about_us">关于我们</string>
+    <string name="bill">账单</string>
+    <string name="recharge">充值</string>
+    <string name="withdrawal">提现</string>
+    <string name="market_real_time_quotation">1000MG市场报价</string>
+    <string name="market_real_time_quotation1">市场实时报价</string>
+    <string name="type">货种</string>
+    <string name="price">价格</string>
+    <string name="time">时间</string>
+    <string name="stock">存量</string>
+    <string name="stock1">存量(万)</string>
+    <string name="number1">数量(万)</string>
+    <string name="record">记录</string>
+    <string name="invitation_code_ewm">邀请码</string>
+    <string name="scan_ewm">扫一扫下面的二维码图案</string>
+    <string name="scan_ewm_title">扫描二维码</string>
+    <string name="gold_shopkeeper_invitation_code">MG金掌柜邀请码</string>
+    <string name="friend">你们共同的好友也在这里</string>
+    <string name="share">一键分享</string>
+    <string name="team_performance">战队业绩</string>
+    <string name="team_members">战队成员</string>
+    <string name="total_assets">资产总量</string>
+    <string name="available_price">到手价</string>
+    <string name="basic_information">基本信息</string>
+    <string name="modify_head_nikename">头像、昵称修改</string>
+    <string name="bind_wallet">钱包绑定</string>
+    <string name="bind_wallet_des">资产转出、转入钱包关系绑定</string>
+    <string name="add_bank_card">添加银行卡</string>
+    <string name="bank_card">银行卡</string>
+    <string name="bank_card_des">绑定银行卡用于提现使用</string>
+    <string name="certification">实名认证</string>
+    <string name="skip">跳过</string>
+    <string name="certification_des">实名认证保护账户</string>
+    <string name="login_password">登录密码</string>
+    <string name="login_password_des">修改登录密码</string>
+    <string name="pay_password">支付密码</string>
+    <string name="check_pay_password">验证支付密码</string>
+    <string name="pay_password_des">修改支付密码</string>
+    <string name="different">两次密码不一致</string>
+    <string name="head_portrait">头像</string>
+    <string name="nikename">昵称</string>
+    <string name="nikename_hint">请输入昵称（2-6个字）</string>
+    <string name="complete">完成</string>
+    <string name="number">数量</string>
+    <string name="zeng">增</string>
+    <string name="xiao">销</string>
+    <string name="purchase_by_amount">按金额购买</string>
+    <string name="purchase_by_quantity">按数量购买</string>
+    <string name="total_order">订单合计</string>
+    <string name="cny_g">元/克</string>
+    <string name="btn_pay">支付</string>
+    <string name="spec">规格</string>
+    <string name="g">克</string>
+    <string name="discount">活动折扣 %s 折</string>
+    <string name="current_price">当前价格</string>
+    <string name="service_charge">服务费</string>
+    <string name="market_price">市场价格</string>
+    <string name="purchase_quantity">购买数量</string>
+    <string name="distribution_address">配送地址</string>
+    <string name="country">国家</string>
+    <string name="china">中国</string>
+    <string name="consignee_name">收货人姓名</string>
+    <string name="consignee_phone">收货人电话</string>
+    <string name="p_c_d">省-市-区</string>
+    <string name="select_p_c_d">请选择省市区</string>
+    <string name="input_detail_address">请输入详细地址</string>
+    <string name="add_bank_card_pay">添加银行卡支付</string>
+    <string name="select_payment_method">选择支付方式</string>
+    <string name="choose_cash_bank_card">选择提现银行卡</string>
+    <string name="choose_bank_name">选择所属银行</string>
+    <string name="please_enter_the_amount_of_cash_withdrawal">请输入提现金额</string>
+    <string name="please_enter_the_amount_of_recharge">请输入充值金额</string>
+    <string name="sure_pay">确定支付</string>
+    <string name="please_enter">请输入</string>
+    <string name="bank_card_number">银行卡卡号</string>
+    <string name="bank_name">所属银行</string>
+    <string name="phone_number">预留手机号</string>
+    <string name="phone_number_error">请输入正确手机号</string>
+    <string name="please_enter_phone_number">请输入银行预留手机号</string>
+    <string name="get_wallet_address">请输入或扫一扫获取公链钱包地址</string>
+    <string name="sms_code">短信验证码</string>
+    <string name="phone_number_code">本次操作需要短信确认,请输入\n%s收到的短信校验码</string>
+    <string name="unbind">解绑</string>
+    <string name="mobile_phone_album_selection">手机相册选取</string>
+    <string name="take_photo">拍照</string>
+    <string name="submit">提交修改</string>
+    <string name="platform_wallet">当前绑定imtoken地址</string>
+    <string name="platform_wallet_tip">* 请务必确认公链钱包地址准确性,若钱包地址\n错误将导致您资产无法挽回的损失。</string>
+    <string name="please_bind_wallet_address">请绑定公链钱包地址再继续操作</string>
+    <string name="bind_wallet_address">转入需要您先绑定imtoken公链钱包地址</string>
+    <string name="turn_out_to_wallet">转出至公链钱包</string>
+    <string name="transfer_with_public_chain_wallet">使用公链钱包进行转账</string>
+    <string name="copy">复制</string>
+    <string name="forget_pwd">忘记密码</string>
+    <string name="old_pwd">旧密码</string>
+    <string name="new_pwd_1">请输入新密码</string>
+    <string name="new_pwd_2">请确认新密码</string>
+    <string name="set_pay_pwd">设置6位数字支付密码</string>
+    <string name="title_modify_pwd">修改密码</string>
+    <string name="title_reset_pwd">重置密码</string>
+    <string name="one_day">1天</string>
+    <string name="one_week">1周</string>
+    <string name="one_month">1月</string>
+    <string name="trend">走势</string>
+
+    <string name="order_number2">订单号:</string>
+    <string name="order_type">类型:</string>
+    <string name="order_quantity1">订单数量:</string>
+    <string name="order_residual_quantity">剩余数量:</string>
+    <string name="order_purchase_quantity">购买数量:</string>
+    <string name="order_purchase_price">购买价格:</string>
+    <string name="order_time1">时间:</string>
+    <string name="order_state">状态:</string>
+    <string name="shuliang">数量:</string>
+    <string name="cancel_the_order">撤单</string>
+    <string name="order_detail">账单详情</string>
+    <string name="working_hours">工作时间</string>
+    <string name="mon_fri">周一至周五</string>
+    <string name="customer_service_telephone_numbers">客服电话</string>
+    <string name="software_version">软件版本</string>
+    <string name="name">姓名</string>
+    <string name="id_card">身份证号</string>
+    <string name="serial_number">流水号:</string>
+    <string name="income">收入:</string>
+    <string name="expenditure">支出:</string>
+    <string name="pay_method">支付方式:</string>
+    <string name="balance">余额:</string>
+    <string name="remarks">备注:</string>
+    <string name="public_chain_wallet_address">公链钱包地址:</string>
+    <string name="surplus">剩余:</string>
+    <string name="consignee">收货人:</string>
+    <string name="consignee_phone_number">手机号:</string>
+    <string name="consignee_address">地址:</string>
+    <string name="my_message">我的消息</string>
+    <string name="no_bank_card">您还没有绑定银行卡哦～</string>
+    <string name="no_record">您还没有任何记录哦～</string>
+    <string name="no_message">您还没有任何消息哦～</string>
+    <string name="no_team">您还没有战队成员哦～</string>
+    <string name="no_pay_pwd">请先设置支付密码</string>
+    <string name="real_name_auth">您已实名认证</string>
+    <string name="read_agreement">请阅读并同意协议</string>
+    <string name="add_consignee_info">请添加收货人信息</string>
+    <string name="recharge_to_balance">充值到余额</string>
+    <string name="balanceAvailableAfter">账户余额</string>
+    <string name="big_recharge">支付宝充值</string>
+    <string name="entrust_success">购买黄金提交成功预计5-10分钟到账</string>
+    <string name="apply_for_brokerage">申请成为经纪人</string>
+    <string name="under_review">审核中...</string>
+    <string-array name="bank_names">
+        <item>工商银行</item>
+        <item>农业银行</item>
+        <item>中国银行</item>
+        <item>建设银行</item>
+        <item>交通银行</item>
+        <item>招商银行</item>
+        <item>邮储银行</item>
+        <item>中信银行</item>
+        <item>光大银行</item>
+        <item>华夏银行</item>
+        <item>民生银行</item>
+        <item>兴业银行</item>
+    </string-array>
+    <string-array name="bank_codes">
+        <item>0102</item>
+        <item>0103</item>
+        <item>0104</item>
+        <item>0105</item>
+        <item>0301</item>
+        <item>0308</item>
+        <item>0403</item>
+        <item>0302</item>
+        <item>0303</item>
+        <item>0304</item>
+        <item>0305</item>
+        <item>0309</item>
+    </string-array>
+    <string name="turn_out_to_public_chain">转出至公链钱包</string>
+    <string name="turn_in_to_wallet_gold">转入MG金掌柜</string>
+    <string name="gold_chain_tip">持有MG可转入公链钱包,也可以将 \n 公链钱包的MG转回到MG金掌柜</string>
+    <string name="transfer_accounts">转账</string>
+    <string name="huangjinlian">黄金链</string>
+    <string name="trans_wallet_address">请长按粘贴或扫一扫获取转账钱包地址</string>
+    <string name="trans_quantity">输入转账数量</string>
+    <string name="own_mg">持有MG</string>
+    <string name="fee">手续费</string>
+</resources>

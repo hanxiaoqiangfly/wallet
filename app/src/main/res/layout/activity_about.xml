@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:orientation="vertical">
+
+    <include layout="@layout/top_bar"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tv_content"
+            style="@style/tv_style_15_333"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="@dimen/space_30dp"
+            android:layout_marginRight="@dimen/space_30dp"
+            android:text=""/>
+
+        <LinearLayout
+            android:id="@+id/ll_top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/ll_middle"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_horizontal">
+
+            <TextView
+                style="@style/tv_style_15_333"
+                android:text="@string/working_hours"/>
+
+            <TextView
+                android:id="@+id/tv_workTime"
+                style="@style/tv_style_15_333"
+                android:layout_marginLeft="@dimen/space_20dp"
+                android:layout_marginRight="@dimen/space_20dp"
+                tools:text="@string/mon_fri"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_middle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/ll_bottom"
+            android:layout_alignLeft="@id/ll_top"
+            android:layout_marginBottom="@dimen/space_20dp"
+            android:layout_marginTop="@dimen/space_20dp"
+            android:gravity="center_horizontal">
+
+            <TextView
+                style="@style/tv_style_15_333"
+                android:text="@string/customer_service_telephone_numbers"/>
+
+            <TextView
+                android:id="@+id/tv_workPhone"
+                style="@style/tv_style_15_333"
+                android:layout_marginLeft="@dimen/space_20dp"
+                tools:text="400-3232-323"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_bottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/ll_top"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/space_30dp">
+
+            <TextView
+                style="@style/tv_style_15_333"
+                android:text="@string/working_hours"/>
+
+            <TextView
+                android:id="@+id/tv_version"
+                style="@style/tv_style_15_333"
+                android:layout_marginLeft="@dimen/space_20dp"
+                android:text="v1.0"/>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

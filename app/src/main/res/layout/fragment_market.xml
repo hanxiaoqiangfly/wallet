@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <include layout="@layout/top_bar_text"/>
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/refreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <com.aladinn.walletkotlin.widget.TextViewVerticalGradient
+                        android:id="@+id/tvvg"
+                        style="@style/tv_base_style"
+                        android:includeFontPadding="false"
+                        android:text="0.00"
+                        android:textSize="@dimen/text_size_37sp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        style="@style/tv_base_style"
+                        android:layout_marginBottom="@dimen/space_5dp"
+                        android:layout_marginTop="@dimen/space_5dp"
+                        android:text="CNY/MG"
+                        android:textSize="@dimen/text_size_22sp"/>
+
+                    <TextView
+                        style="@style/tv_style_12_999"
+                        android:text="@string/market_real_time_quotation1"/>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/space_45dp"
+                    android:layout_marginLeft="@dimen/space_15dp"
+                    android:layout_marginRight="@dimen/space_15dp"
+                    android:layout_marginTop="@dimen/space_20dp"
+                    android:background="@drawable/shape_bg_fafafa"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/space_15dp">
+
+                    <EditText
+                        android:id="@+id/et_num"
+                        style="@style/et_style_1"
+                        android:hint="@string/please_enter_the_purchase_quantity"
+                        android:inputType="numberDecimal"
+                        android:textColor="@color/color_F45654"/>
+
+                    <View
+                        android:layout_width="@dimen/space_1dp"
+                        android:layout_height="@dimen/space_20dp"
+                        android:background="@color/color_999999"/>
+
+                    <TextView
+                        style="@style/tv_style_15_black"
+                        android:layout_marginLeft="@dimen/space_10dp"
+                        android:text="@string/mg"/>
+
+                    <TextView
+                        android:id="@+id/btn_one_click_purchase"
+                        android:layout_width="105dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/space_15dp"
+                        android:background="@drawable/shape_bg_yellow"
+                        android:drawableLeft="@drawable/yijiangoumai"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="@dimen/space_12dp"
+                        android:text="@string/one_click_purchase"
+                        android:textColor="@color/white"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/space_20dp"
+                    android:layout_marginLeft="@dimen/space_15dp"
+                    android:layout_marginRight="@dimen/space_15dp"
+                    android:layout_marginTop="@dimen/space_12dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <com.aladinn.walletkotlin.widget.TextViewDINMedium
+                        android:id="@+id/tvdm_cny"
+                        style="@style/tv_style_15_333"
+                        android:layout_marginLeft="@dimen/space_15dp"
+                        android:layout_marginRight="@dimen/space_5dp"
+                        android:includeFontPadding="false"
+                        android:text=""
+                        android:visibility="gone"/>
+
+                    <TextView
+                        android:id="@+id/tv_unit"
+                        style="@style/tv_style_12_666"
+                        android:text="@string/yuan"
+                        android:visibility="gone"/>
+
+                    <Space
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"/>
+
+                    <LinearLayout
+                        android:id="@+id/ll_availableCny"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            style="@style/tv_style_12_999"
+                            android:text="@string/available_balance"/>
+
+                        <com.aladinn.walletkotlin.widget.TextViewDINMedium
+                            android:id="@+id/tv_available_balance"
+                            style="@style/tv_style_15_999"
+                            android:layout_marginLeft="@dimen/space_5dp"
+                            android:layout_marginRight="@dimen/space_5dp"
+                            android:includeFontPadding="false"
+                            android:text="0.00"/>
+
+                        <TextView
+                            style="@style/tv_style_12_999"
+                            android:text="@string/yuan"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <include layout="@layout/line_space_10"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/space_45dp"
+                    android:layout_marginHorizontal="@dimen/space_15dp"
+                    android:layout_marginTop="@dimen/space_20dp"
+                    android:background="@drawable/shape_bg_fafafa"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingHorizontal="@dimen/space_15dp">
+
+                    <EditText
+                        android:id="@+id/et_order_nikename"
+                        style="@style/et_style_1"
+                        android:drawableLeft="@drawable/sousuo"
+                        android:drawablePadding="@dimen/space_5dp"
+                        android:hint="@string/lookup"/>
+
+                    <com.aladinn.walletkotlin.widget.TextViewHorizontalGradient
+                        android:id="@+id/tv_search"
+                        style="@style/tv_base_style"
+                        android:includeFontPadding="false"
+                        android:text="@string/search"/>
+
+                </LinearLayout>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:nestedScrollingEnabled="false"/>
+            </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+</LinearLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingHorizontal="@dimen/space_15dp"
+    android:paddingVertical="@dimen/space_10dp">
+
+
+    <TextView
+        android:id="@+id/tv_type"
+        style="@style/tv_style_15_333"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        tools:text="MG / USD" />
+
+    <com.aladinn.walletkotlin.widget.TextViewDINBold
+        android:id="@+id/tv_price"
+        style="@style/tv_style_18_001833"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:includeFontPadding="false"
+        tools:text="1420.32" />
+
+
+    <TextView
+        android:id="@+id/tv_time"
+        style="@style/tv_style_12_999"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        tools:text="2019.7.5 13:23:34" />
+
+</LinearLayout>

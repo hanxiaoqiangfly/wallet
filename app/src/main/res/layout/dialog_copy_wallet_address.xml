@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="160dp"
+              android:background="@drawable/shape_bg_white"
+              android:gravity="center"
+              android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_wallet_address"
+        style="@style/tv_style_18_333"
+        android:layout_marginLeft="@dimen/space_30dp"
+        android:layout_marginRight="@dimen/space_30dp"
+        android:gravity="center"
+        tools:text="312121"/>
+
+    <LinearLayout
+        android:id="@+id/ll_copy"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_50dp"
+        android:layout_marginLeft="@dimen/space_50dp"
+        android:layout_marginRight="@dimen/space_50dp"
+        android:layout_marginTop="@dimen/space_20dp"
+        android:background="@drawable/shape_bg_ring"
+        android:gravity="center">
+
+        <com.aladinn.walletkotlin.widget.TextViewHorizontalGradient
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/copy"
+            android:textSize="@dimen/text_size_15sp"/>
+    </LinearLayout>
+
+
+</LinearLayout>

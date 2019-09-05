@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/space_15dp"
+    android:layout_marginRight="@dimen/space_15dp"
+
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:gravity="center_vertical">
+
+        <TextView
+            style="@style/tv_style_18_black"
+            android:text="@string/mg" />
+
+        <TextView
+            style="@style/tv_style_12_black"
+            android:layout_marginLeft="@dimen/space_5dp"
+            android:text="@string/trend" />
+
+        <Space
+            android:layout_width="@dimen/space_0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <RadioGroup
+            android:id="@+id/rg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rb_one_day"
+                style="@style/radio_button_style"
+                android:checked="true"
+                android:text="@string/one_day" />
+
+            <RadioButton
+                android:id="@+id/rb_one_week"
+                style="@style/radio_button_style"
+                android:layout_marginLeft="@dimen/space_10dp"
+                android:layout_marginRight="@dimen/space_10dp"
+                android:text="@string/one_week" />
+
+            <RadioButton
+                android:id="@+id/rb_one_month"
+                style="@style/radio_button_style"
+                android:text="@string/one_month" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <include layout="@layout/line" />
+
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/lineChart"
+        android:layout_width="match_parent"
+        android:layout_height="240dp" />
+
+    <TextView
+        style="@style/tv_style_12_999"
+        android:layout_gravity="end"
+        android:layout_marginBottom="@dimen/space_10dp"
+        android:text="数据来源：上海黄金交易所" />
+</LinearLayout>

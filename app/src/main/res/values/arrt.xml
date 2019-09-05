@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CountDownButton">
+        <attr name="millisinfuture" format="integer"/>
+        <attr name="countdowninterva" format="integer"/>
+        <attr name="normalColor" format="color"/>
+        <attr name="countDownColor" format="color"/>
+    </declare-styleable>
+
+    <declare-styleable name="CustomAgreementView">
+        <attr name="agreementText" format="string"/>
+        <attr name="agreementUrl" format="string"/>
+        <attr name="agreementTextSize" format="dimension"/>
+        <attr name="agreementCenterText" format="string"/>
+        <attr name="agreementRightText" format="string"/>
+        <attr name="agreementTextColor" format="color"/>
+        <attr name="agreementCenterTextColor" format="color"/>
+    </declare-styleable>
+
+</resources>
